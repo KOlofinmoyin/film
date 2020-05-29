@@ -1,2 +1,14 @@
-<h1>Movies#new</h1>
-<p>Find me in app/views/movies/new.html.erb</p>
+<h1>Add a new Movie</h1>
+
+<%= simple_form_for @movie do |form| %>
+  <p><%= form.input :name %></p>
+  <p><%= form.input :studio %></p>
+  <p><%= form.input :guidance %></p>
+  <p><%= form.input :director %></p>
+  <p><%= form.input :url %></p>
+  <p><%= form.input :starring %></p>
+  <p><%= form.input :runtime %></p>
+  <p><%= form.input :ticket_price %></p>
+  <p><%= form.input :description %></p>
+  <p><%= form.button :submit %></p>
+<% end %>
