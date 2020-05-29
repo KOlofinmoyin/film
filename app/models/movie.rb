@@ -7,5 +7,5 @@ class Movie < ApplicationRecord
   validates :ticket_price, presence: true
   validates :runtime, presence: true
   validates :description, presence: true
-  
+  validates :url, presence: true, uniqueness: true
 end
