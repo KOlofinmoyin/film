@@ -1,14 +1,16 @@
 <h1>Add a new Movie</h1>
 
 <%= simple_form_for @movie do |form| %>
-  <p><%= form.input :name %></p>
-  <p><%= form.input :studio %></p>
-  <p><%= form.input :guidance %></p>
-  <p><%= form.input :director %></p>
-  <p><%= form.input :url %></p>
-  <p><%= form.input :starring %></p>
-  <p><%= form.input :runtime %></p>
-  <p><%= form.input :ticket_price %></p>
-  <p><%= form.input :description %></p>
+  <p><%= form.input :name, label: "Job title" %></p>
+  <p><%= form.input :studio, label: "Studio" %></p>
+  <p><%= form.input :guidance, label: "Guidance" %></p>
+  <p><%= form.input :director, label: "Director" %></p>
+  <p><%= form.input :url, label: "Url" %></p>
+  <p><%= form.input :starring, label: "Starring" %></p>
+  <p><%= form.input :runtime, label: "Running time" %></p>
+  <p><%= form.input :ticket_price, label: "ticket price" %></p>
+  <p><%= form.input :description, label: "Description" %></p>
   <p><%= form.button :submit %></p>
 <% end %>
+
+<%= link_to "Back", movies_path %>
